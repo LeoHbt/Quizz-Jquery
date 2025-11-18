@@ -1,0 +1,52 @@
+[
+    {
+        "question": "Quelle est la capitale de l'Australie ?",
+        "propositions": ["Sydney", "Melbourne", "Canberra", "Perth"],
+        "reponse": "Canberra"
+    },
+    {
+        "question": "Qui a peint la Joconde ?",
+        "propositions": ["Michel-Ange", "Leonard de Vinci", "Raphaël", "Donatello"],
+        "reponse": "Leonard de Vinci"
+    },
+    {
+        "question": "Quel est l’élément chimique dont le symbole est O ?",
+        "propositions": ["Or", "Oxygène", "Osmium", "Ozone"],
+        "reponse": "Oxygène"
+    },
+    {
+        "question": "En quelle année a eu lieu la chute du mur de Berlin ?",
+        "propositions": ["1987", "1989", "1991", "1993"],
+        "reponse": "1989"
+    },
+    {
+        "question": "Quel est le plus grand océan du monde ?",
+        "propositions": ["Atlantique", "Indien", "Arctique", "Pacifique"],
+        "reponse": "Pacifique"
+    },
+    {
+        "question": "Qui a écrit 'Les Misérables' ?",
+        "propositions": ["Emile Zola", "Victor Hugo", "Gustave Flaubert", "Balzac"],
+        "reponse": "Victor Hugo"
+    },
+    {
+        "question": "Quel pays a remporté la Coupe du monde de football 2018 ?",
+        "propositions": ["Brésil", "Allemagne", "Argentine", "France"],
+        "reponse": "France"
+    },
+    {
+        "question": "Quel est l'animal terrestre le plus rapide ?",
+        "propositions": ["Guépard", "Lion", "Antilope", "Tigre"],
+        "reponse": "Guépard"
+    },
+    {
+        "question": "Combien y a-t-il de continents sur Terre ?",
+        "propositions": ["4", "5", "6", "7"],
+        "reponse": "7"
+    },
+    {
+        "question": "Quel est le plus long fleuve du monde ?",
+        "propositions": ["Nil", "Amazone", "Yangtsé", "Mississippi"],
+        "reponse": "Amazone"
+    }
+]
