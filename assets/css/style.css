@@ -6,10 +6,5 @@
 }
 
 .customHidden {
-    display: none;
-    color: red;
-}
-
-#reponse1 {
-    color: red;
+    visibility: hidden;
 }

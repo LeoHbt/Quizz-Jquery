@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Quizz Jquery</title>
+        <title>Quiz Jquery</title>
         <link rel="stylesheet" href="src/output.css" />
         <script
             src="https://code.jquery.com/jquery-3.7.1.js"
@@ -14,53 +14,51 @@
     </head>
     <body class="bg-pink-200 flex min-h-full flex-col">
         <main
-            class="container flex-col mx-auto border-6 grow justify-center border-pink-300 bg-pink-100 rounded-5xl my-8 flex"
+            class="container flex-col mx-auto border-6 grow justify-center border-pink-300 bg-pink-100 rounded-4xl my-8 flex"
         >
             <!-- Div lancement questionnaire -->
-            <div class="text-center">
+            <div id="divStart" class="text-center">
                 <div class="pb-7">
                     <p class="text-5xl text-black mb-5">Questionnaire de culture générale</p>
                     <p class="text-3xl">10 Questions</p>
                 </div>
                 <button
+                    id="bouttonStart"
                     class="bg-pink-50 p-3 rounded-4xl w-[250px] border-3 border-pink-300 hover:bg-pink-300 hover:text-white hover:cursor-pointer transition duration-300"
                 >
                     Commencer le quiz
                 </button>
             </div>
             <!-- Div Question -->
-            <div class="customHidden">
+            <div id="divQuestion" class="customHidden">
                 <div class="text-center my-10 mx-2">
-                    <p class="text-5xl text-black mb-5">Question 1</p>
-                    <p>
+                    <p id="numeroQuestion" class="text-5xl text-black mb-5">Question 1</p>
+                    <p id="textQuestion">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis error, sapiente deserunt
                         laborum unde ullam perferendis aliquam expedita.
                     </p>
                 </div>
-                <div class="flex flex-col ms-[10%] mb-[5%]">
-                    <div class="my-6">
-                        <input type="radio" id="reponse1" name="question1" value="reponse1" />
-                        <label class="text-xl" for="reponse1">Reponse 1</label>
-                    </div>
-                    <div class="my-6">
-                        <input type="radio" id="reponse2" name="question1" value="reponse2" />
-                        <label class="text-xl" for="reponse2">Reponse 2</label>
-                    </div>
-                    <div class="my-6">
-                        <input type="radio" id="reponse3" name="question1" value="reponse3" />
-                        <label class="text-xl" for="reponse3">Reponse 3</label>
-                    </div>
-                </div>
+                <div id="divPropositions" class="flex flex-col ms-[10%] mb-[5%]"></div>
                 <div class="flex justify-evenly">
                     <button
+                        id="bouttonPrecedent"
                         class="bg-pink-50 p-3 rounded-4xl w-[120px] border-3 border-pink-300 hover:bg-pink-300 hover:text-white hover:cursor-pointer transition duration-300"
                     >
-                        Precedent
+                        Précédent
                     </button>
                     <button
+                        id="bouttonSuivant"
                         class="bg-pink-50 p-3 rounded-4xl w-[120px] border-3 border-pink-300 hover:bg-pink-300 hover:text-white hover:cursor-pointer transition duration-300"
                     >
                         Suivant
+                    </button>
+                </div>
+                <!-- Div boutton valider -->
+                <div id="divValider" class="flex justify-center customHidden">
+                    <button
+                        class="bg-pink-50 p-3 rounded-4xl w-[300px] border-3 border-pink-300 hover:bg-pink-300 hover:text-white hover:cursor-pointer transition duration-300 mt-5"
+                    >
+                        Valider vos réponses
                     </button>
                 </div>
             </div>
