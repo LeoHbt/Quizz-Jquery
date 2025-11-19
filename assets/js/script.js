@@ -45,6 +45,7 @@ function afficherQuestion() {
     }
 }
 
+// actualise le tableau des valeurs utilisateur et ajoute la réponse courante à l'indice de la question
 function updateChecked() {
     console.log(listeReponses);
 
@@ -53,6 +54,17 @@ function updateChecked() {
             reponsesTab[numeroQuestion - 1] = proposition.value;
         }
     }
+}
+
+// return le nombre de bonnes réponses
+function calculScore() {
+    let bonneReponses = 0;
+    for (const [index, reponse] of reponsesTab.entries()) {
+        if (reponse == questions[index].reponse) {
+            bonneReponses++;
+        }
+    }
+    return bonneReponses;
 }
 
 $("#bouttonPrecedent").on("click", function () {
@@ -77,4 +89,12 @@ $("#bouttonSuivant").on("click", function () {
     updateChecked();
     numeroQuestion++;
     afficherQuestion();
+});
+
+$("#divValider").on("click", function () {
+    updateChecked();
+
+    $("#divQuestion").addClass("hidden");
+    $("#divScore").removeClass("hidden");
+    $("#score").text(`${calculScore()} / 10`);
 });
